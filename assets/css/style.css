@@ -1,10 +1,4 @@
 /* nav editan */
-.navbar-brand{
-	font-family: Viga;
-	font-size: 36px;
-	color: blue;
-}
-
 .nav-link {
 	
 	text-transform: uppercase;
@@ -15,7 +9,7 @@
 {
 	content: '';
 	display: block;
-	border-bottom: 3px solid  #41A451;
+	border-bottom: 3px solid  blue;
 	width: 50%;
 	margin: auto;
 	padding-bottom: 5px;
@@ -28,19 +22,20 @@
 .unoinfo {
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
 	border-radius: 12px;
-	margin-top: 50px;
+	margin-top: 40px;
 	padding: 25px;
 	background-color: white;
 	margin-bottom: 5px;	
 }
 
 .unoinfo img{
-    width: 500px;
-	height: 400px;
+    width: 600px;
+    height: 500px;
+    
 }
 
 .arduino {
-    margin-top: 20px;
+    margin-top: 5px;
 
 }
 
@@ -58,3 +53,88 @@
     margin-right: auto;
     width: 50%;
   }
+
+  /* target */
+.capt {
+    background-color:gray; /* transparent */
+    border: none;
+    color: black;
+    padding: 5px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 5px;
+    
+  }
+  .capt2 {
+    background-color:gray; /* transparent */
+    border: none;
+    color: black;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 5px;
+  }
+
+  .capt3 {
+    background-color:gray; /* transparent */
+    border: none;
+    color: black;
+    padding: 10px 65px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 5px;
+  }
+
+  /* komponen */
+.komp1 {
+    position: absolute;
+    bottom: 70px;
+    left: 40px;
+    color: white;
+    font-size: 40px;
+}
+.komp2 {
+    position: absolute;
+    bottom: 160px;
+    left: 80px;
+    color: white;
+    font-size: 40px;
+}
+.komp3 {
+    position: absolute;
+    top: 130px;
+    left: 50px;
+    color: white;
+    font-size: 60px;
+}
+.komp4 {
+    position: absolute;
+    top: 45px;
+    left: 60px;
+    color: white;
+    font-size: 40px;
+}
+.komp5 {
+    position: absolute;
+    top: 45px;
+    left: 225px;
+    color: white;
+    
+}
+.komp6 {
+    position: absolute;
+    top: 45px;
+    left: 250px;
+    color: white;
+    
+}
+.komp7 {
+    position: absolute;
+    top: 45px;
+    right: 85px;
+    color: white;
+    
+}

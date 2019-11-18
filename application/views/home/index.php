@@ -1,7 +1,7 @@
-<div class="container">
-  <nav class="navbar navbar-expand-lg">
+<div class="container fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-    <a class="navbar-brand" href="#">WebUno</a>
+    <a class="navbar-brand" style="color=blue" href="#">WebUno</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -16,10 +16,18 @@
 </div>
 
 <div class="container arduino">
-  <div class="unoinfo">
-    <div class="row justify-content-center">
-      <div class="col">
+  <div class="row justify-content-center">
+    <div class="unoinfo">
+      <div class="col-lg">
         <img src="<?= base_url(); ?>assets/images/uno.png">
+        <button type="button" class="capt komp1" data-toggle="tooltip" data-placement="top" title="Barrel Jack">.</button>
+        <button type="button" class="capt komp2" data-toggle="tooltip" data-placement="top" title="Voltage Regulator">.</button>
+        <button type="button" class="capt komp3" data-toggle="tooltip" data-placement="top" title="Power USB">.</button>
+        <button type="button" class="capt komp4" data-toggle="tooltip" data-placement="top" title="Arduino Reset">.</button>
+        <button type="button" class="capt2 komp5" data-toggle="tooltip" data-placement="top" title="Analog Reference">.</button>
+        <button type="button" class="capt3 komp6" data-toggle="tooltip" data-placement="top" title="Digital I/O">.</button>
+        <button type="button" class="capt3 komp7" data-toggle="tooltip" data-placement="top" title="Digital I/O">.</button>
+
 
       </div>
     </div>
