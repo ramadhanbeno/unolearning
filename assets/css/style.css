@@ -1,0 +1,60 @@
+/* nav editan */
+.navbar-brand{
+	font-family: Viga;
+	font-size: 36px;
+	color: blue;
+}
+
+.nav-link {
+	
+	text-transform: uppercase;
+	margin-right: 15px;
+}
+
+.nav-link:hover::after 
+{
+	content: '';
+	display: block;
+	border-bottom: 3px solid  #41A451;
+	width: 50%;
+	margin: auto;
+	padding-bottom: 5px;
+	margin-bottom: -8px;
+
+}
+
+
+/* arduino */
+.unoinfo {
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+	border-radius: 12px;
+	margin-top: 50px;
+	padding: 25px;
+	background-color: white;
+	margin-bottom: 5px;	
+}
+
+.unoinfo img{
+    width: 500px;
+	height: 400px;
+}
+
+.arduino {
+    margin-top: 20px;
+
+}
+
+.pagebackground {
+    background-color:#D5D8DC;
+}
+
+.nav{
+    background-color:#D5D8DC;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
