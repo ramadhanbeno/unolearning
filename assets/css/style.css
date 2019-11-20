@@ -1,30 +1,57 @@
+
+html,
+body {
+    height: 100%;
+  }
+#page-content {
+    flex: 1 0 auto;
+  }
+  
+  
+#sticky-footer {
+    flex-shrink: none;
+  }
 /* nav editan */
+
 .nav-link {
 	
 	text-transform: uppercase;
-	margin-right: 15px;
+    margin-right: 15px;
+    
+    
 }
 
 .nav-link:hover::after 
 {
 	content: '';
 	display: block;
-	border-bottom: 3px solid  blue;
+	border-bottom: 3px solid white;
 	width: 50%;
 	margin: auto;
 	padding-bottom: 5px;
 	margin-bottom: -8px;
-
 }
 
 
 /* arduino */
+.arduinouno h1{
+    margin-top:140px;
+    padding-left: 60px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 50px;
+    letter-spacing: -3px;
+}
+.arduinouno p{
+    
+    text-align: justify;
+}
+
 .unoinfo {
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
 	border-radius: 12px;
-	margin-top: 40px;
+	margin-top: 35px;
 	padding: 25px;
-	background-color: white;
+	background-color:white;
 	margin-bottom: 5px;	
 }
 
@@ -56,7 +83,7 @@
 
   /* target */
 .capt {
-    background-color:gray; /* transparent */
+    background-color:transparent; /* transparent */
     border: none;
     color: black;
     padding: 5px 30px;
@@ -66,8 +93,8 @@
     font-size: 5px;
     
   }
-  .capt2 {
-    background-color:gray; /* transparent */
+.capt2 {
+    background-color:transparent; /* transparent */
     border: none;
     color: black;
     padding: 10px 10px;
@@ -77,11 +104,21 @@
     font-size: 5px;
   }
 
-  .capt3 {
-    background-color:gray; /* transparent */
+.capt3 {
+    background-color:transparent; /* transparent */
     border: none;
     color: black;
     padding: 10px 65px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 5px;
+  }
+.capt4 {
+    background-color:transparent; /* transparent */
+    border: none;
+    color: black;
+    padding: 10px 140px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -137,4 +174,120 @@
     right: 85px;
     color: white;
     
+}
+.komp8 {
+    position: absolute;
+    top: 110px;
+    left: 170px;
+    font-size: 30px;
+    color: white;
+    
+}
+.komp9 {
+    position: absolute;
+    top: 175px;
+    left: 190px;
+    font-size: 25px;
+    color: white;
+    
+}
+.komp10 {
+    position: absolute;
+    top: 250px;
+    left: 175px;
+    font-size: 25px;
+    color: white;
+    
+}
+.komp11 {
+    position: absolute;
+    bottom: 90px;
+    left: 165px;
+    font-size: 40px;
+    color: white;
+    
+}
+.komp12 {
+    position: absolute;
+    top: 132px;
+    left: 285px;
+    color: white;
+    
+}
+.komp13 {
+    position: absolute;
+    top: 182px;
+    left: 285px;
+    color: white;
+    
+}
+.komp14 {
+    position: absolute;
+    bottom: 147px;
+    left: 285px;
+    color: white;
+    font-size: 40px;
+}
+.komp15 {
+    position: absolute;
+    bottom: 55px;
+    left: 240px;
+    color: white;
+    
+}
+.komp16 {
+    position: absolute;
+    bottom: 55px;
+    left: 265px;
+    color: white;
+    
+}
+.komp17 {
+    position: absolute;
+    bottom: 55px;
+    left: 290px;
+    color: white;
+    
+}
+.komp18 {
+    position: absolute;
+    bottom: 55px;
+    left: 315px;
+    color: white;
+    
+}
+.komp19 {
+    position: absolute;
+    bottom: 55px;
+    left: 340px;
+    color: white;
+    
+}
+.komp20 {
+    position: absolute;
+    bottom: 55px;
+    left: 365px;
+    color: white;
+    
+}
+.komp21 {
+    position: absolute;
+    bottom: 55px;
+    right: 82px;
+    color: white;
+    
+}
+.komp22 {
+    position: absolute;
+    top: 160px;
+    right: 135px;
+    color: white;
+    
+}
+.komp23 {
+    position: absolute;
+    top: 160px;
+    right: 70px;
+    color: white;
+    font-size: 38px;    
 }
