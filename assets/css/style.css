@@ -297,6 +297,30 @@ mark,
     font-size: 38px;    
 }
 
+/* section 2 komponen fisik */
+.kompin {
+    margin-top: 70px;
+}
+
+.kompin h1{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 35px;
+}
+
+.kompin h2{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    color: rgba(0,128,255);
+    font-weight: bolder;
+}
+
+.kompin p{
+    text-align: justify;
+}
+
+
+
+/* section 3 komponen tambahan */
 .komptam {
     margin-top: 70px;
 }

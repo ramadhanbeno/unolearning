@@ -9,8 +9,9 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <div class="navbar-nav ml-auto" style="font-family: Viga">
         <a class="nav-item nav-link" style="text-transform: capitalize;" href="#home">Dashboard</a>
-        <a class="nav-item nav-link" style="text-transform:capitalize" href="#komp-in">Komponen Inti</a>
-        <a class="nav-item nav-link" style="text-transform:capitalize" href="#komp-tam">Komponen Tambahan</a>
+        <a class="nav-item nav-link" style="text-transform:capitalize" href="#komp-in">Physical Components</a>
+        <a class="nav-item nav-link" style="text-transform:capitalize" href="#komp-tam">Additional Components</a>
+        <a class="nav-item nav-link" style="text-transform:capitalize" href="#">Exercises</a>
       </div>
     </div>
   </nav>
@@ -39,7 +40,7 @@
                 <button type="button" class="capt komp8" data-toggle="tooltip" data-placement="top" title="ICSP Header pins">.</button>
                 <button type="button" class="capt komp9" data-toggle="tooltip" data-placement="top" title="USB interface chip">.</button>
                 <button type="button" class="capt komp10" data-toggle="tooltip" data-placement="top" title="Crystal oscillator">.</button>
-                <button type="button" class="capt komp11" data-toggle="tooltip" data-placement="top" title="aaa">.</button>
+                <button type="button" class="capt komp11" data-toggle="tooltip" data-placement="top" title="Kapasitor">.</button>
                 <button type="button" class="capt2 komp12" data-toggle="tooltip" data-placement="top" title="LEDs">.</button>
                 <button type="button" class="capt2 komp13" data-toggle="tooltip" data-placement="top" title="TX & RX LEDs">.</button>
                 <button type="button" class="capt4 komp14" data-toggle="tooltip" data-placement="top" title="Main microcontroller">.</button>
@@ -62,11 +63,44 @@
     </div>
   </section>
 
-  <!-- content2 -->
+  <!-- Physical Components -->
+  <section id="komp-in">
+    <div class="container">
+      <div class="kompin">
+        <h1 class="text-center">Physical Components</h1>
+        <div class="row pt-2 mt-4">
+          <div class="col">
+            <h2>Barrel Jack</h2>
+            <p>Papan Arduino dapat juga diberikan colokan catu daya secara langsung dari sumber daya AC dengan menghubungkannya ke Barrel Jack yang tersedia. Tegangan maksimal yang dapat diberikan kepada Arduino maksimal 12volt dengan range arus maksimal 2A (Agar regulator tidak panas).</p>
+          </div>
+          <div class="col">
+            <h2>Voltage Regulator</h2>
+            <p>Fungsi dari voltage regulator adalah untuk mengendalikan atau menurunkan tegangan yang diberikan ke papan Arduino dan menstabilkan tegangan DC yang digunakan oleh prosesor dan elemen-elemen lain</p>
+          </div>
+          <div class="col">
+            <h2>Power USB</h2>
+            <p>Power USB digunakan untuk memberikan catu daya ke Papan Arduino menggunakan kabel USB dari komputer</p>
+          </div>
+          <div class="col">
+            <h2>Arduino Reset</h2>
+            <p>Arduino Reset digunakan untuk memulai program pada arduino dari awal bukan untuk menghapus program atau mengosongkan mikrokontroller</p>
+          </div>
+          <div class="w-100"></div>
+          <div class="col">col</div>
+          <div class="col">col</div>
+          <div class="col">col</div>
+          <div class="col">col</div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+  <!-- content3 -->
   <section id="komp-tam">
     <div class="container">
       <div class="komptam">
-        <h1 class="text-center">Komponen Tambahan</h1>
+        <h1 class="text-center">Additional Components</h1>
         <div class="row pt-2 mt-4">
           <div class="col-sm-4">
             <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="100" height="100">
