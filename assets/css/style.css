@@ -35,11 +35,16 @@ body {
 
 /* arduino */
 .arduinouno h1{
-    margin-top:140px;
+    margin-top:170px;
     padding-left: 60px;
     font-family: 'Quicksand', sans-serif;
     font-size: 50px;
     letter-spacing: -3px;
+}
+mark,
+.arduino .mark{
+    border-radius: 30px;
+    background-color: rgba(0,128,255);
 }
 .arduinouno p{
     
@@ -290,4 +295,14 @@ body {
     right: 70px;
     color: white;
     font-size: 38px;    
+}
+
+.komptam {
+    margin-top: 70px;
+}
+
+.komptam h1{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 35px;
+    
 }
