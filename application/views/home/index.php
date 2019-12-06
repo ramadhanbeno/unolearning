@@ -11,6 +11,7 @@
         <a class="nav-item nav-link" style="text-transform: capitalize;" href="#home">Dashboard</a>
         <a class="nav-item nav-link" style="text-transform:capitalize" href="#komp-in">Physical Components</a>
         <a class="nav-item nav-link" style="text-transform:capitalize" href="#komp-tam">Additional Components</a>
+        <a class="nav-item nav-link" style="text-transform:capitalize" href="#">Examples</a>
         <a class="nav-item nav-link" style="text-transform:capitalize" href="#">Exercises</a>
       </div>
     </div>
@@ -69,11 +70,20 @@
       <div class="kompin">
         <h1 class="text-center">Physical Components</h1>
         <div class="row pt-2 mt-4">
-          <div class="col">
-            <h2>Barrel Jack</h2>
-            <p>Papan Arduino dapat juga diberikan colokan catu daya secara langsung dari sumber daya AC dengan menghubungkannya ke Barrel Jack yang tersedia. Tegangan maksimal yang dapat diberikan kepada Arduino maksimal 12volt dengan range arus maksimal 2A (Agar regulator tidak panas).</p>
-          </div>
-          <div class="col">
+          <?php $i = 1;
+          $a = array(5, 10, 15, 20);
+          foreach ($comp as $com) : ?>
+            <div class="col">
+              <h2><?= $com->nama_component ?></h2>
+              <p><?= $com->desc_component ?></p>
+            </div>
+          <?php
+            if (++$i == 5) {
+              echo '<div class="w-100"></div>';
+            };
+          endforeach; ?>
+          <div class="w-100"></div>
+          <!-- <div class="col">
             <h2>Voltage Regulator</h2>
             <p>Fungsi dari voltage regulator adalah untuk mengendalikan atau menurunkan tegangan yang diberikan ke papan Arduino dan menstabilkan tegangan DC yang digunakan oleh prosesor dan elemen-elemen lain</p>
           </div>
@@ -89,7 +99,7 @@
           <div class="col">col</div>
           <div class="col">col</div>
           <div class="col">col</div>
-          <div class="col">col</div>
+          <div class="col">col</div> -->
         </div>
       </div>
     </div>
@@ -106,7 +116,7 @@
             <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="100" height="100">
             <h2>LED</h2>
             <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            <p><a class="btn btn-secondary" href="<?= base_url(); ?>component" role="button">View details &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
           <div class="col-sm-4">
             <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="100" height="100">
@@ -123,35 +133,36 @@
         </div><!-- /.row -->
       </div>
     </div>
+  </section>
 
-    <div class="row pt-2 mt-4">
-      <div class="col-sm">
-        <div class="card">
-          <div class="card-header text-center">
-            Komponen
-          </div>
-          <div class="card-body">
-            <div class="row">
-              <div class="col-sm">
-                <h5>Komponen 1</h5>
-                <p>With supporting text below as a natural lead-in to additional content.</p>
-              </div>
-              <div class="col-sm">
-                <h5>Komponen 3</h5>
-                <p>With supporting text below as a natural lead-in to additional content.</p>
-              </div>
-              <div class="col-sm">
-                <h5>Komponen 3</h5>
-                <p>With supporting text below as a natural lead-in to additional content.</p>
-              </div>
+  <!-- <div class="row pt-2 mt-4">
+    <div class="col-sm">
+      <div class="card">
+        <div class="card-header text-center">
+          Komponen
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-sm">
+              <h5>Komponen 1</h5>
+              <p>With supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            <div class="col-sm">
+              <h5>Komponen 3</h5>
+              <p>With supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            <div class="col-sm">
+              <h5>Komponen 3</h5>
+              <p>With supporting text below as a natural lead-in to additional content.</p>
             </div>
           </div>
-          <div class="card-footer text-muted">
-            2 days ago
-          </div>
+        </div>
+        <div class="card-footer text-muted">
+          2 days ago
         </div>
       </div>
     </div>
-  </section>
+  </div>
+  </section> -->
   <!-- end background -->
 </div>
