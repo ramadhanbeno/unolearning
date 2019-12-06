@@ -70,99 +70,43 @@
       <div class="kompin">
         <h1 class="text-center">Physical Components</h1>
         <div class="row pt-2 mt-4">
-          <?php $i = 1;
+          <?php $i = 0;
           $a = array(5, 10, 15, 20);
           foreach ($comp as $com) : ?>
-            <div class="col">
+            <div class="col-sm">
               <h2><?= $com->nama_component ?></h2>
               <p><?= $com->desc_component ?></p>
             </div>
           <?php
-            if (++$i == 5) {
+            if (++$i % 4 == 0) {
               echo '<div class="w-100"></div>';
             };
           endforeach; ?>
           <div class="w-100"></div>
-          <!-- <div class="col">
-            <h2>Voltage Regulator</h2>
-            <p>Fungsi dari voltage regulator adalah untuk mengendalikan atau menurunkan tegangan yang diberikan ke papan Arduino dan menstabilkan tegangan DC yang digunakan oleh prosesor dan elemen-elemen lain</p>
-          </div>
-          <div class="col">
-            <h2>Power USB</h2>
-            <p>Power USB digunakan untuk memberikan catu daya ke Papan Arduino menggunakan kabel USB dari komputer</p>
-          </div>
-          <div class="col">
-            <h2>Arduino Reset</h2>
-            <p>Arduino Reset digunakan untuk memulai program pada arduino dari awal bukan untuk menghapus program atau mengosongkan mikrokontroller</p>
-          </div>
-          <div class="w-100"></div>
-          <div class="col">col</div>
-          <div class="col">col</div>
-          <div class="col">col</div>
-          <div class="col">col</div> -->
+
         </div>
       </div>
     </div>
-
-
   </section>
   <!-- content3 -->
   <section id="komp-tam">
     <div class="container">
       <div class="komptam">
         <h1 class="text-center">Additional Components</h1>
-        <div class="row pt-2 mt-4">
-          <div class="col-sm-4">
-            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="100" height="100">
-            <h2>LED</h2>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-            <p><a class="btn btn-secondary" href="<?= base_url(); ?>component" role="button">View details &raquo;</a></p>
-          </div><!-- /.col-lg-4 -->
-          <div class="col-sm-4">
-            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="100" height="100">
-            <h2>Buzzer</h2>
-            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-          </div><!-- /.col-lg-4 -->
-          <div class="col-sm-4">
-            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="100" height="100">
-            <h2>Push Button</h2>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-          </div><!-- /.col-lg-4 -->
-        </div><!-- /.row -->
-      </div>
+        <div class="row justify-content-center pt-2 mt-4">
+          <?php foreach ($additional as $add) : ?>
+            <div class="col-md-auto add">
+              <div class="card" style="width:200px">
+                <img src="<?= base_url(); ?>/assets/images/<?= $add->image_add ?>" class="card-img-top">
+                <div class="card-body">
+                  <a href="<?= base_url(); ?>component/index/<?= $add->id_add; ?>" class="card-title"><?= $add->nama_add ?></a>
+                </div>
+              </div>
+            </div>
+          <?php endforeach; ?>
+        </div><!-- /.col-lg-4 -->
+
+      </div><!-- /.row -->
     </div>
   </section>
-
-  <!-- <div class="row pt-2 mt-4">
-    <div class="col-sm">
-      <div class="card">
-        <div class="card-header text-center">
-          Komponen
-        </div>
-        <div class="card-body">
-          <div class="row">
-            <div class="col-sm">
-              <h5>Komponen 1</h5>
-              <p>With supporting text below as a natural lead-in to additional content.</p>
-            </div>
-            <div class="col-sm">
-              <h5>Komponen 3</h5>
-              <p>With supporting text below as a natural lead-in to additional content.</p>
-            </div>
-            <div class="col-sm">
-              <h5>Komponen 3</h5>
-              <p>With supporting text below as a natural lead-in to additional content.</p>
-            </div>
-          </div>
-        </div>
-        <div class="card-footer text-muted">
-          2 days ago
-        </div>
-      </div>
-    </div>
-  </div>
-  </section> -->
-  <!-- end background -->
 </div>

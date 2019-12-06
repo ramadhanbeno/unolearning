@@ -18,15 +18,15 @@
         <div class="row justify-content-center" style="margin-top:30px">
             <div class="col-sm arduinouno justify-content-center">
 
-                <h1>Light-Emitting Diode</h1>
-                <p style="padding: 0 80px"> is a semiconductor light source that emits light when current flows through it. Electrons in the semiconductor recombine with electron holes, releasing energy in the form of photons. The color of the light (corresponding to the energy of the photons) is determined by the energy required for electrons to cross the band gap of the semiconductor. White light is obtained by using multiple semiconductors or a layer of light-emitting phosphor on the semiconductor device</p>
+                <h1><?= $addcomp['nama_add'] ?></h1>
+                <p style="padding: 0 80px"><?= $addcomp['desc_add'] ?></p>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-5">
 
                 <div class="row">
                     <div class="component-info">
                         <div class="col-lg">
-                            <img src="<?= base_url(); ?>assets/images/LED.png" style="width:200px;height:400px">
+                            <img src="<?= base_url(); ?>assets/images/<?= $addcomp['image_add'] ?>" style="width:400px;height:400px">
                         </div>
                     </div>
 

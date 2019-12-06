@@ -346,6 +346,21 @@ mark,
 	margin-bottom: 5px;	
 }
 
+/* additional component */
+.add .card{
+    width: 200px;
+    border-color: rgba(0,128,255);
+    background-color: #D5D8DC;
+}
+
+.add .card a{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+    color: rgba(0,128,255);
+    letter-spacing: -1px;
+    font-weight: bold;
+    text-align: center;
+}
 /* exercise */
 .examples h1{
     margin-top:100px;
