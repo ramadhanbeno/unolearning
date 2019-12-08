@@ -10,28 +10,11 @@ body {
   
 #sticky-footer {
     flex-shrink: none;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
   }
-/* nav editan */
-
-.nav-link {
-	
-	text-transform: uppercase;
-    margin-right: 15px;
-    
-    
-}
-
-.nav-link:hover::after 
-{
-	content: '';
-	display: block;
-	border-bottom: 3px solid white;
-	width: 50%;
-	margin: auto;
-	padding-bottom: 5px;
-	margin-bottom: -8px;
-}
-
 
 /* arduino */
 .arduinouno h1{
@@ -69,10 +52,6 @@ mark,
 .arduino {
     margin-top: 5px;
 
-}
-
-.pagebackground {
-    background-color:#D5D8DC;
 }
 
 .nav{
@@ -360,6 +339,7 @@ mark,
     letter-spacing: -1px;
     font-weight: bold;
     text-align: center;
+    
 }
 /* exercise */
 .examples h1{
@@ -372,4 +352,11 @@ mark,
 .examples p{
     
     text-align: justify;
+}
+
+.code .card{
+    border-radius: 10px;
+}
+.code label{
+    padding-left: 30px;
 }

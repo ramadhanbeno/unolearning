@@ -9,9 +9,11 @@
 
 <script src="<?= base_url(); ?>assets/js/tether.min.js"></script>
 <script src="<?= base_url(); ?>assets/js/main.js"></script>
+<!-- sweet allert -->
+<script src="<?= base_url(); ?>assets/sweetalert/sweetalert2.all.min.js"></script>
 
 
-<footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+<footer id="sticky-footer" class="py-3 bg-dark text-white-50">
     <div class="container text-center">
         <small>Copyright &copy; WebUno</small>
     </div>
