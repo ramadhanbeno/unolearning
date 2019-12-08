@@ -13,7 +13,7 @@ if (FlashData == 'True') {
         title: 'Thats not right',
         text: 'Try again'
     })
-} else {
+} else if (FlashData == 'null') {
     Swal.fire({
         icon: 'info',
         title: 'Please enter your answer',
