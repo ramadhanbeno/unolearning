@@ -1,27 +1,30 @@
 <?php
 
-class Examples extends CI_Controller
+class Exercise extends CI_Controller
 {
     public function __construct()
     {
         parent::__construct();
         $this->load->library('form_validation');
+        $this->load->helper('file');
     }
 
-    public function no($id)
+    public function soal($id)
     {
-        $data['listexample'] = $this->examples_model->allexamples()->result();
-        $data['examples'] = $this->examples_model->all_examples($id);
-        $data['judul'] = 'Examples';
+        $data['list_essay'] = $this->exercise_model->exerciseessay()->result();
+        $data['essay'] = $this->exercise_model->exercise_essay($id);
+        $data['exercises'] = $this->exercise_model->allexercise()->result();
+        $data['exercise'] = $this->exercise_model->all_exercise($id);
+        $data['judul'] = 'Exercise';
         $this->load->view('templates/header', $data);
-        $this->load->view('examples/index', $data);
+        $this->load->view('exercise/index', $data);
         $this->load->view('templates/footer');
         $form = $this->input->post();
         if (isset($form['run1']))
             $baca = read_file('assets/LEDstate.txt');
 
-        if (isset($form['code-id']) && isset($form['answer_a'])) {
-            if ($form['answer_a'] == $data['examples']['answer_a'] && $form['answer_b'] == $data['examples']['answer_b'] && $form['answer_c'] == $data['examples']['answer_c']) {
+        if (isset($form['code-id']) && isset($form['jawab_a'])) {
+            if ($form['jawab_a'] == $data['exercise']['jawab_a'] && $form['jawab_b'] == $data['exercise']['jawab_b'] && $form['jawab_c'] == $data['exercise']['jawab_c']) {
                 if ($baca == '0') {
                     echo '<div class="flash-data" data-flashdata="True"></div>';
                     $write_data = $form['code-id'];
@@ -35,6 +38,7 @@ class Examples extends CI_Controller
             write_file('assets/LEDstate.txt', $write_data, 'w');
         }
     }
+
 
     public function __destruct()
     {

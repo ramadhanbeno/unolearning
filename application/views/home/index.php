@@ -9,8 +9,8 @@
       <a class="nav-item nav-link" style="text-transform: capitalize;" href="#home">Dashboard</a>
       <a class="nav-item nav-link" style="text-transform:capitalize" href="#komp-in">Physical Components</a>
       <a class="nav-item nav-link" style="text-transform:capitalize" href="#komp-tam">Additional Components</a>
-      <a class="nav-item nav-link" style="text-transform:capitalize" href="#">Examples</a>
-      <a class="nav-item nav-link" style="text-transform:capitalize" href="#">Exercises</a>
+      <a class="nav-item nav-link" style="text-transform:capitalize; color:rgba(0,128,255);" href="<?= base_url() ?>/examples/no/1">Examples</a>
+      <a class="nav-item nav-link" style="text-transform:capitalize; color:rgba(0,128,255);" href="<?= base_url() ?>/exercise/soal/1">Exercises</a>
     </div>
   </div>
 </nav>

@@ -4,12 +4,7 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <div class="navbar-nav p-2" style="font-family: Viga">
-            <a class="nav-item nav-link" style="text-transform: capitalize;" href="#">Examples</a>
-            <a class="nav-item nav-link" style="text-transform:capitalize" href="#">Exercises</a>
-        </div>
-    </div>
+
 </nav>
 <section>
 
