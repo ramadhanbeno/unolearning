@@ -11,6 +11,7 @@
 <script src="<?= base_url(); ?>assets/js/main.js"></script>
 <!-- sweet allert -->
 <script src="<?= base_url(); ?>assets/sweetalert/sweetalert2.all.min.js"></script>
+<script src="<?= base_url(); ?>assets/sweetalert/sweet.js"></script>
 
 
 <footer id="sticky-footer" class="py-3 bg-dark text-white-50">
