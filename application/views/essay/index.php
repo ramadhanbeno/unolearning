@@ -68,7 +68,7 @@
                         }
 
                         ?>
-                    <?= $es['nama_component'] ?>
+
                 <?php endforeach; ?>
 
             </div>

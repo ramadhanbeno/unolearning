@@ -40,12 +40,12 @@ class Exercise extends CI_Controller
     }
 
 
-    public function __destruct()
-    {
-        $write_data = '0';
-        if (!write_file('assets/LEDstate.txt', $write_data, 'w'))
-            echo 'Unable to write the file';
-        else
-            echo 'File written!';
-    }
+    // public function __destruct()
+    // {
+    //     $write_data = '0';
+    //     if (!write_file('assets/LEDstate.txt', $write_data, 'w'))
+    //         echo 'Unable to write the file';
+    //     else
+    //         echo 'File written!';
+    // }
 }
